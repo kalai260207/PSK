@@ -1,12 +1,12 @@
-# EXP-5 PSK & QPSK
+# NAME: KALAIVANI D
+# REG NO: 212224060113
+# PSK AND QPSK
 # Aim
 Write a simple Python program for the modulation and demodulation of PSK and QPSK.
 # Tools required
-1.Personal Computer
-
-2.Google Colab
+google colab
 # Program
-# PSK
+**PSK**
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,10 +18,10 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
     b, a = butter(order, normal_cutoff, btype='low', analog=False)
     return lfilter(b, a, data)
 # Parameters
-fs = 1000                # Sampling frequency
-f_carrier = 50           # Carrier frequency
-bit_rate = 10            # Data rate (bits per second)
-T = 1                    # Total time duration in seconds
+fs = 1000                
+f_carrier = 50          
+bit_rate = 10            
+T = 1                    
 t = np.linspace(0, T, int(fs * T), endpoint=False)
 # Message signal (binary data)
 bits = np.random.randint(0, 2, bit_rate)
@@ -61,9 +61,9 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 ```
-# QPSK
+**QPSK**
 ```
-#QPSK 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -141,15 +141,13 @@ plt.tight_layout()
 plt.grid(True)
 plt.show()
 ```
+
 # Output Waveform
-# PSK
+**PSK**
+<img width="1190" height="790" alt="image" src="https://github.com/user-attachments/assets/a7cf3fc8-9eff-44c2-89f7-f9a37bca639b" />
 
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/2d71c13a-92dc-40df-a620-41e6021e0f51" />
-
-# QPSK
-
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/d51f418f-42e3-4b78-b9dd-225a8fcc2d63" />
-
+**QPSK**
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/ac14f2d3-cb57-49bd-bebd-e65ccf598389" />
 
 # Results
-Thus PSK and QPSK were performed and the waveform is verified using Google Colab.
+```
