@@ -1,6 +1,7 @@
 # NAME: KALAIVANI D
 # REG NO: 212224060113
-# PSK AND QPSK
+# EXP NO: 5
+# EXP NAME: PSK AND QPSK
 # Aim
 Write a simple Python program for the modulation and demodulation of PSK and QPSK.
 # Tools required
